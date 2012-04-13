@@ -1,0 +1,357 @@
+
+
+<!DOCTYPE html>
+
+ <!-- Gemaakt door Robbert van der Hulst, S1063848 -->
+ 
+
+<html>
+<head>
+  
+  <!-- In de Header wordt de stylesheet gedefineerd en uitgelezen -->
+  
+  <title>HS Leiden App</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- De zelfgemaakte stylesheet wordt hieronder aan de app toegevoegd-->
+  
+  <link rel="stylesheet" href="themes/HS.css" />
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile.structure-1.0.1.min.css" />
+  <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+
+</head>
+    <body>
+    
+     <!-- Er wordt een nieuwe pagina aangemaakt home en er wordt boven in een Header toegevoegd met de tekst "HS Leiden App" -->
+     
+        <div data-role="page" data-theme="a" id="home">
+            <div data-theme="a" data-role="header">
+                <h3>
+                    HS Leiden App
+                </h3>
+            </div>
+            <div data-role="content">
+            
+             <!-- Er wordt een plaatje toegevoegd onder de header met een bepaalde grootte -->
+             
+                <img style="width: 288px; height: 150px" src="images/Leiden.png"/>
+                
+                 <!-- Er worden hieronder 4 buttons toegevoegd met hun bijbehorende tekst en link naar bijbehorende pagina. 
+                 De overgang naar deze pagina's wordt geregeld met een flip effect. -->
+                 
+                <a data-role="button" data-transition="flip" href="#propedeuse">
+                    Propedeuse
+                </a>
+                <a data-role="button" data-transition="flip" href="#studierichtingen">
+                    Studierichtingen
+                </a>
+                <a data-role="button" data-transition="flip" href="#minor">
+                    Minor
+                </a>
+                <a data-role="button" data-transition="flip" href="#stageafstuderen">
+                    Stage &amp; Afstuderen
+                </a>
+                
+                 <!-- Onderaan pagina 1 wordt een footer aangemaakt met de tekst "Powered By HS Leiden" -->
+                 
+            </div>
+            <div data-theme="a" data-role="footer">
+                <h2>
+                    Powered By HS Leiden
+                </h2>
+            </div>
+        </div>
+        
+         <!-- Er wordt een nieuwe pagina aangemaakt met de bijbehorende naam en het bijbehorende thema. Ook wordt hier een header aan toegevoegd -->
+         
+        <div data-role="page" data-theme="a" id="propedeuse">
+            <div data-theme="a" data-role="header">
+                <h5>
+                    Propedeuse
+                </h5>
+            </div>
+            <div data-role="content">
+                <div>
+                
+                <!-- Er wordt een tekstveld toegevoegd en daaronder de tekst in alinea's en met de bijbehorende opmaak-->
+                
+                    <p>
+                        <b>
+                            Doelen van de propedeuse&nbsp;
+                        </b>
+                    </p>
+                    <p>
+                        In de propedeuse kun je je oriënteren op de gekozen opleiding en het beroep,
+                        en beoordelen of de opleiding past bij jouw interesse en motivatie. De
+                        hogeschool onderzoekt tijdens de propedeuse of je geschikt bent voor een
+                        hbo-studie en voor de gekozen opleiding. Als blijkt dat je niet de juiste
+                        opleiding hebt gekozen, kan de hogeschool behulpzaam zijn bij het verwijzen
+                        naar andere opleidingen. Het onderwijs in de propedeuse bereidt voor op
+                        de volgende drie studiejaren.
+                    </p>
+                    <p>
+                        <b>
+                            Studieprogramma propedeuse
+                        </b>
+                        &nbsp;
+                    </p>
+                    <p>
+                        De opleiding kent een propedeutische fase, die afgesloten wordt met een
+                        getuigschrift. Het propedeuse programma is primair gericht op studenten
+                        met HAVO als vooropleiding. Het programma, propedeuse en postpropedeuse,
+                        omvat vier perioden van elk tien weken. Elke periode bevat een project
+                        dat één van de afzonderlijke afstudeerrichtingen van de opleiding belicht.
+                        Naast de projecten wordt flankerend onderwijs aangeboden. Voor studenten
+                        met een relevante MBO niveau 4 vooropleiding, worden waar mogelijk aangepaste
+                        leerwegen afgesproken. Hiervoor dienen studenten met een MBO diploma vrijstelling(en)
+                        te verkrijgen, toegewezen door de examencommissie.
+                    </p>
+                    <p>
+                        Naast de projecten worden elke periode een richtingsspecifiek flankerend
+                        module, een communicatiemodule (per 1 en 3) en twee algemene Bachelor of
+                        ICT modulen aangeboden.
+                    </p>
+                    <p>
+                        <b>
+                            Studieadvies propedeuse
+                        </b>
+                        &nbsp;&nbsp;
+                    </p>
+                    <p>
+                        <span>
+                            De examencommissie brengt namens het College van Bestuur aan iedere student,
+                            uiterlijk aan het einde van zijn eerste jaar van inschrijving voor de propedeutische
+                            fase van de opleiding, een schriftelijk studieadvies uit over de voortzetting
+                            van zijn studie binnen of buiten de opleiding. De examencommissie kan tevens
+                            namens het College van Bestuur een bindend studieadvies geven (BSA) wanneer
+                            de student niet geschikt wordt geacht voor de opleiding. Bij de besluitvorming
+                            inzake het bindend afwijzend studieadvies wordt rekening gehouden met persoonlijke
+                            omstandigheden, zie ook de OER. Dit betekent dat de student de opleiding
+                            niet mag voortzetten aan Hogeschool Leiden.&nbsp;
+                        </span>
+                    </p>
+                </div>
+                
+                <!-- Er wordt een knop aangemaakt met "Terug" die terug gaat naar het hoofdmenu met het effect slide-->
+                
+                <a data-role="button" data-transition="slide" href="#home">
+                    Terug
+                </a>
+            </div>
+        </div>
+        
+        <!-- Er wordt een nieuwe pagina aangemaakt met de bijbehorende naam en het bijbehorende thema. Ook wordt hier een header aan toegevoegd -->
+        
+        <div data-role="page" id="studierichtingen">
+            <div data-theme="a" data-role="header">
+                <h1>
+                    Studierichtingen
+                </h1>
+            </div>
+            <div data-role="content">
+                <div>
+                
+                   <!-- Er wordt een tekstveld toegevoegd en daaronder de tekst in alinea's en met de bijbehorende opmaak-->
+                   
+                    <p>
+                        <span>
+                            De opleiding kent de volgende richtingen:
+                        </span>
+                    </p>
+                    <p>
+                    </p>
+                    <ul>
+                        <li>
+                            <b>
+                                Software Engineering,
+                            </b>
+                            gericht op het bouwen, ontwerpen, testen, analyseren, in gebruik nemen
+                            van, en aanpassen van IT applicaties;
+                        </li>
+                        <li>
+                            <b>
+                                Media Technologie,
+                            </b>
+                            gericht op het ontwerpen en vormgeven van toepassingen op een creatieve
+                            manier;&nbsp;
+                        </li>
+                        <li>
+                            <b>
+                                Forensich ICT,
+                            </b>
+                            gericht op het traceren van misbruik, beveiligen tegen misbruik, en inzetten
+                            van ICT bij opsporing en vervolging van criminelen;&nbsp;
+                        </li>
+                        <li>
+                            <b>
+                                Business IT,
+                            </b>
+                            gericht op organisaties en de manier waarop zij met ICT omgaan. Betrouwbaarheid
+                            en onderhoud van ICT middelen is essentieel en belangrijk in het vooruitlopen
+                            op de concurrentie.&nbsp;
+                            <br />
+                        </li>
+                    </ul>
+                    <p>
+                    </p>
+                    <p>
+                        <span>
+                            De opleiding duurt vier jaar en wordt uitsluitend voltijds verzorgd. Het
+                            eerste jaar is het propedeusejaar van de opleiding, hierin maak je kennis
+                            met de verschillende kanten van ICT en de mogelijke richtingen. Vanaf het
+                            tweede jaar begint de hoofdfase (post- propedeuse). De hoofdfase kent een
+                            aantal leerlijnen, zowel algemeen voor de Bachelor of ICT als richtingsspecifiek.
+                            In het tweede jaar ga je verder met de door jou gekozen richting.
+                        </span>
+                    </p>
+                    <p>
+                        <span>
+                            &nbsp;
+                        </span>
+                    </p>
+                </div>
+                
+                <!-- Er wordt een knop aangemaakt met "Terug" die terug gaat naar het hoofdmenu met het effect slide-->
+                
+                <a data-role="button" data-transition="fade" data-theme="a" href="#home">
+                    Terug
+                </a>
+            </div>
+            
+            <!-- Er wordt een nieuwe pagina aangemaakt met de bijbehorende naam en het bijbehorende thema. Ook wordt hier een header aan toegevoegd -->
+            
+        </div>
+        <div data-role="page" id="minor">
+            <div data-theme="a" data-role="header">
+                <h3>
+                    Minor
+                </h3>
+            </div>
+            <div data-role="content">
+                <div>
+                
+                   <!-- Er wordt een tekstveld toegevoegd en daaronder de tekst in alinea's en met de bijbehorende opmaak-->
+                   
+                    <p>
+                        De minor omvat vrije keuzeruimte voor een competentieontwikkeling van
+                        30 EC, geplaatst in het eerste deel van het vierde jaar. Hiermee kunnen
+                        studenten een eigen kleuring geven aan hun persoonlijke beroepsgerichte
+                        ontwikkeling en aan een eigen profilering werken. De minoren binnen informatica
+                        hebben een studieduur van 0,5 jaar die de student kan gebruiken voor een
+                        drietal doeleinden.
+                    </p>
+                    <p>
+                        1. Doorstromen naar een masteropleiding aan een universiteit of hogeschool;
+                        <br />
+                        2. Verdiepen binnen het eigen bachelordomein door zich verder te specialiseren;
+                    </p>
+                    <p>
+                        3. Verbreden buiten het eigen bachelordomein door zich te differentieren.
+                    </p>
+                    <p>
+                        Binnen deze driedeling hebben studenten de keuze voor een invulling binnen
+                        Hogeschool Leiden of zoeken zij de mogelijkheden bij andere (inter) nationale
+                        hoger onderwijsinstellingen. Ook hebben studenten de keuze om zelf een
+                        minorprogramma, de zogenoemde vrije variant, samen te stellen.
+                    </p>
+                    <p>
+                        De opleiding Informatica bidet drie minoren aan, welke als verdiepend
+                        binnen het eigen bachelordomein gezien kunnen worden;
+                    </p>
+                    <p>
+                        1. Minor Software Engineering;
+                        <br />
+                        2. Minor Forensisch ICT;
+                        <br />
+                        3. Minor Business IT;
+                    </p>
+                    <p>
+                        <span>
+                            De minor vanuit de richting Media Technologie is eerder verbredend. Deze
+                            is ook toegangkelijk voor studenten van andere opleidingen.
+                        </span>
+                    </p>
+                    <p>
+                        <span>
+                            Gedurende het cursusjaar 2011-2012 worden de minoren herzien.
+                        </span>
+                    </p>
+                </div>
+                
+                <!-- Er wordt een knop aangemaakt met "Terug" die terug gaat naar het hoofdmenu met het effect slide-->
+                
+                <a data-role="button" data-transition="slide" data-theme="a" href="#home">
+                    Terug
+                </a>
+            </div>
+        </div>
+        
+        <!-- Er wordt een nieuwe pagina aangemaakt met de bijbehorende naam en het bijbehorende thema. Ook wordt hier een header aan toegevoegd -->
+        
+        <div data-role="page" id="stageafstuderen">
+            <div data-theme="a" data-role="header">
+                <h1>
+                    Stage &amp; Afstuderen
+                </h1>
+            </div>
+            <div data-role="content">
+                <div>
+                
+                   <!-- Er wordt een tekstveld toegevoegd en daaronder de tekst in alinea's en met de bijbehorende opmaak-->
+                   
+                    <p>
+                        In het tweede deel van het derde jaar lopen studenten stage bij een bedrijf,
+                        wat zo optimaal mogelijk past bij de afstudeerrichting van de student en
+                        de competenties die hij/zij tot dusverre binnen het moduleonderwijs heeft
+                        opgebouwd.
+                    </p>
+                    <p>
+                        Binnen de stage:
+                    </p>
+                    <p>
+                    </p>
+                    <ul>
+                        <li>
+                            Maakt de student kennis met het beroep en bijbehorende beroepscompetenties;
+                            <br />
+                        </li>
+                        <li>
+                            Maakt de student gebruik van de aangeleerde competenties, op het tot dusverre
+                            bereikte niveau;
+                        </li>
+                        <li>
+                            Bereikt de student op specifieke gebieden het competentieniveau 3.
+                        </li>
+                    </ul>
+                    <span>
+                        In de 3e en 4e periode van het 4e jaar is het afstuderen gepositineerd.
+                        Echter, wanner een student voldoende EC’s behaald heeft om met het afstuderen
+                        te starten, is dit in de praktijk in elke periode van het jaar mogelijk.
+                        De vorm van het afstuderen lijkt in grote mate op de stage.&nbsp;
+                    </span>
+                    <p>
+                    </p>
+                    <p>
+                        <span>
+                            De student studeert buiten de opleiding af, meestal binnen bedrijven en
+                            instellingen buiten de hogeschool. Het is voor studenten tevens mogelijk
+                            om in het buitenland af te studeren.
+                        </span>
+                        <br />
+                    </p>
+                </div>
+                
+                <!-- Er wordt een knop aangemaakt met "Terug" die terug gaat naar het hoofdmenu met het effect slide-->
+                
+                <a data-role="button" data-transition="slide" data-theme="a" href="#home">
+                    Terug
+                </a>
+            </div>
+        </div>
+        <script>
+          
+        </script>
+    </body>
+</html>
